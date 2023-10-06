@@ -1,0 +1,539 @@
+/* ESTILOS GLOBALES */
+*{
+	box-sizing: border-box;
+}
+
+strong, b{
+	color:#bb5500;
+}
+
+ul{
+	list-style-type: none;
+}
+
+p{
+	line-height: 30px;
+} 
+
+body{
+	margin:0px;
+	font-family: 'Nunito', sans-serif;
+	background-image: url(../img/fondo.jpg);
+	width:1280px;
+	margin: auto;
+	padding:1px;
+}
+
+h2{
+	text-align: center;
+	color: #bb5500;
+	padding-top: 30px;
+}
+
+h3{
+	margin-top:0px;
+	font-size: 19px;
+	color:#2b7c76;
+}
+
+.h3_fake{
+	padding-top: inherit;
+    font-size: 19px;
+    color: #2b7c76;
+}
+
+.footer{
+	padding-top: 2%;
+}
+
+.banner{
+	background-image: url(../img/riot_games_banner.jpg);
+	background-size: cover;
+	min-height: 425px;
+}
+
+h1{
+	background: url(../img/logo_riot.png);
+	min-height: 45px;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size:0px;
+	padding:190px;
+}
+
+nav ul{
+	text-align: center;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li{
+	display: inline-block;
+	flex-basis: 20%;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	background-color: #2b7c76;
+	color: white;
+	padding: 10px;
+	margin: 0 20px;
+	border-radius: 5px;
+	border: solid 2px #9d8a45;
+	font-size: 20px;
+}
+
+nav a:hover{
+	background-color: #bb5500;
+	animation:shadow-drop-center linear both;
+}
+
+/*resaltar la seccion donde se encuentra <<ej. clase 6-6 min 41>>*/
+nav>ul>li>a.active {
+    background-color: #bb5500;
+}
+
+.parrafos{
+	border: solid 2px #9d8a45;
+    border-radius: 10px;
+    border-top: none;
+    border-bottom: none;
+    padding: 10px 10px;
+}
+
+.bord_top_bot{
+	border: solid 2px #9d8a45;
+	border-radius: 10px;
+	border-left: none;
+	border-right: none;
+	padding: 10px 10px;
+}
+
+.ancla {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	background-color: #2b7c76;
+	padding: 10px;
+	border-radius: 50%;
+	width: 50px;
+	z-index: 3;
+}
+
+.ancla:hover {
+	background-color:#bb5500;
+}
+
+iframe{
+	vertical-align: top;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	color: #2b7c76;
+}
+
+/*BANNERS INFORMATIVOS*/
+
+.centinelas_der{ 
+	color: white;
+	margin: 30px 0;
+	border-radius: 5px;
+	border: solid 2px #9d8a45;
+	font-size: 20px;
+	display:grid;
+	grid-template-columns: 65% 35%;
+	gap: 10px;
+}
+
+#fondo_senna{
+	background-image: url(../img/fondo_senna.jpg);
+	/* background-size: cover;
+	background-position: center; */
+}
+
+#fondo_riven{
+	background-image: url(../img/fondo_riven.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.centinelas_der_txt{
+	grid-column: 1 / 2;
+	padding: 0px 30px 0px;
+}
+
+.centinela_der_img{
+	height: 200px;
+	grid-column: 2 / 2;
+}
+
+#fondo_poro{
+	background: linear-gradient(116deg, rgba(12,48,39,1) 20%, rgba(23,92,74,1) 64%, rgba(135,151,148,1) 80%, rgba(237,247,246,1) 100%);
+	grid-template-columns: 55% 45%;
+}
+
+.poro_img{
+	height: 200px;
+	grid-column: 1 / 2;
+	margin-left: -40px;
+}
+
+.centinelas_izq{ 
+	color: white;
+	margin: 30px 0;
+	border-radius: 5px;
+	border: solid 2px #9d8a45;
+	font-size: 20px;
+	display:grid;
+	grid-template-columns: 35% 65%;
+	gap: 10px;
+}
+
+#fondo_lucian{
+	background-image: url(../img/fondo_lucian.jpg);
+}
+.centinelas_izq_txt{
+	grid-column: 2 / 2;
+	padding: 0 30px 0 0;
+}
+
+.centinela_izq_img{
+	height: 200px;
+	grid-column: 1 / 2;
+	padding-left: 20px;
+}
+
+#fondo_akshan{
+	background-image: url(../img/fondo_akshan.jpg);
+}
+
+/*SECTION JUEGOS*/
+
+#juegos ul {
+	padding: 10px;
+	margin: 0;
+	display: flex;
+	font-size: 0;
+	/*overflow: hidden;  Oculta el contenido que exceda la altura */
+	transition: max-height 0.5s ease-in-out; /* Transición para max-height */
+  }
+  
+  #juegos ul:hover {
+	height: 600px; /* Cambia la altura en hover */
+	transition: 0.5s ease-in-out; /* Transición para max-height */
+  }
+
+  #juegos li {
+	display: inline-block;
+	height: 300px;
+	padding: 82px 5px;
+	transition-duration: 0.5s;
+	margin-top: -4rem;
+  }
+  
+  #juegos img {
+	height: 100%;
+	z-index: 1;
+  }
+  
+  #juegos li:hover {
+	z-index: 2;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 5px;
+	border: solid 2px #9d8a45;
+	border-bottom: none;
+	border-right: none;
+	margin-top: 0rem;
+  }
+  
+.container {
+	border-radius: 5px;
+	border: solid 2px #9d8a45;
+	border-top: none;
+	border-right: none;
+	display: inline-block;
+	width: 55%;
+	padding-left: 5px;
+}
+  
+#forge {
+	margin-top: 0; /* Margen superior inicial */
+	transition: margin-top 0.5s ease-in-out; /* Transición para margin-top */
+}
+
+#juegos li:hover ~ #forge {
+	margin-top: 400px; /* Cambia el margen superior en hover */
+}
+
+/* #forge ul{
+	padding: 0px;
+    margin-bottom: 10px;
+}
+
+#forge ul li{
+	padding: 10px;
+	text-decoration: none;
+}
+*/
+
+#forge p, h3{
+	font-weight: bolder;
+	padding-left: 0.5rem;
+} 
+
+#forge p{
+	font-style: italic;
+}
+
+/*SECTION E-SPORTS*/
+
+.h3_sports{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.sport_fig{
+	margin: 3% 10% 5%;
+}
+
+figure {
+    background-color: #2b7c76;
+    border-radius: 5px;
+    margin: auto;
+    border: thin solid #9d8a45;
+}
+
+figcaption {
+    padding: 0 10px 5px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 13px;
+}
+
+.izquierda {
+	display: inline-block;
+	margin-right: 50px;
+	margin-top: 7%;
+}
+
+#centro{
+    display: inline-block;
+    margin: 0px;
+    width: 55%;
+    padding: 60px 10px;
+    vertical-align: top;
+}
+
+.contain_iframe{
+	display: flex;
+	justify-content: center;
+}
+
+#e-sports{
+	margin-top: 50px;
+}
+
+#e-sports ul{
+	padding: 10px 0;
+	margin: 0px;
+	display: flex;
+	gap: 10px;
+}
+
+#e-sports li{
+	border: solid 2px #9d8a45;
+	border-radius: 10px;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding: 15px 0px;
+}
+
+#e-sports img{
+	padding-top: 10px;
+}
+
+/*SECTION ENTRETENIMIENTO*/
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 40px 20px;
+	padding-left: 10px;
+  }
+  
+  .grid-item {
+	background-repeat: no-repeat;
+	height: 340px;
+	contain: content;  
+	padding-top: 5px;
+}
+  
+#entretenimiento ul li p{
+	background-color: #000000ab;
+    margin: 225px 5px 0px 0px;
+    color: whitesmoke;
+    padding-bottom: 60px;
+    line-height: 1.5;
+
+}
+
+#comic{
+	background-image: url(../img/ent_comic.jpg);
+}
+
+#musica{
+	background-image: url(../img/ent_musica.jpg);
+}
+
+#arcane{
+	background-image: url(../img/ent_arcane.jpeg);
+}
+
+#merch{
+	background-image: url(../img/ent_merch.jpg);
+}
+
+#live{
+	background-image: url(../img/ent_live.jpg);
+	margin-left: 25%;
+    padding-right: 25.70%;
+}
+
+/*SECTION FUTUROS JUEGOS*/
+
+.futuro{
+	justify-content: center;
+}
+.futuro>div>h3{
+	margin-top: 50px;
+	text-align: center;
+}
+
+/*SECTION CONTACTO - FOOTER*/
+
+#contacto{
+	text-align: center;
+}
+
+#txt-nico{
+	display: inline-block;
+	vertical-align: top;
+	margin-left:10px;
+}
+
+#nicolas p{
+	display: inline-block;
+	width:490px;
+	text-align: left;
+}
+
+#nicolas ul li{
+	display: inline-block;
+}
+
+#nicolas a{
+	text-decoration: none;
+	line-height: 35px;
+}
+
+.iconos{
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	font-size:0px;
+}
+
+.linkedin{
+	background-image:url(../img/linkedin.png);
+}
+
+.mail{
+	background-image:url(../img/mail.png);
+}
+
+.footer_data{
+	display: inline-block;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    vertical-align: bottom;
+	margin-top: 30px;
+}
+
+.footer_data ul{
+	padding: 0px;
+}
+
+#comunic_list li{
+	padding-bottom: 20px;
+}
+
+/*SECTION NEWSLETTER*/
+
+form{
+	padding: 38px;
+	margin: 50px 0;
+}
+
+form>label{
+	color:#2b7c76;
+}
+
+button{
+	text-decoration: none;
+    background-color: #2b7c76;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px #9d8a45;
+    font-size: 20px;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+    border: none;
+    border-bottom: solid 2px #9d8a45;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 1em 0 2em 0;
+    padding: 0 0 1em 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+}
+
+textarea {
+	line-height: 150%;
+	resize: none;
+	width: 100%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.checkbox>label{
+	margin-right: 1em;
+}
+
+@keyframes shadow-drop-center{
+	0%{box-shadow:0 0 0 0 transparent}
+	100%{box-shadow:0 0 20px 0 #9d8a45}
+}
+
+.foto_perfil{
+	width: 250px; 
+	margin-top: 8%;
+}
